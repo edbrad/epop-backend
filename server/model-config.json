@@ -31,5 +31,21 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "MailOwner": {
+    "dataSource": "db",
+    "public": true
+  },
+  "CRID": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Permit": {
+    "dataSource": "db",
+    "public": true
+  },
+  "MailerId": {
+    "dataSource": "db",
+    "public": true
   }
 }
