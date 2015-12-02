@@ -74,6 +74,13 @@ $ slc loopback:model
 ```
 ### Define the Model Schemas:
 
+Add the properties to each of the models to define the data elements:
+
+```
+$ slc loopback:property
+
+```
+
 `MailOwners`
 
 Field Name 		| Type 		| Description

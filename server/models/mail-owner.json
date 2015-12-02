@@ -6,7 +6,48 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
+  "properties": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "ContactName": {
+      "type": "string"
+    },
+    "Address1": {
+      "type": "string"
+    },
+    "Address2": {
+      "type": "string"
+    },
+    "City": {
+      "type": "string"
+    },
+    "State": {
+      "type": "string"
+    },
+    "Zip5": {
+      "type": "string"
+    },
+    "ZipPlus4": {
+      "type": "string"
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "CREATED": {
+      "type": "date"
+    },
+    "CREATED_BY": {
+      "type": "string"
+    },
+    "LAST_UPDATED": {
+      "type": "date"
+    },
+    "UPDATED_BY": {
+      "type": "string"
+    }
+  },
   "validations": [],
   "relations": {},
   "acls": [],
