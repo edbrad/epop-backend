@@ -6,7 +6,24 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
+  "properties": {
+    "CRID": {
+      "type": "string",
+      "required": true
+    },
+    "CREATED": {
+      "type": "date"
+    },
+    "CREATED_BY": {
+      "type": "string"
+    },
+    "LAST_UPDATED": {
+      "type": "date"
+    },
+    "UPDATED_BY": {
+      "type": "string"
+    }
+  },
   "validations": [],
   "relations": {},
   "acls": [],
