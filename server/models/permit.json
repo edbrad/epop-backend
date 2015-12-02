@@ -6,7 +6,39 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
+  "properties": {
+    "PermitNumber": {
+      "type": "string",
+      "required": true
+    },
+    "PermitCity": {
+      "type": "string",
+      "required": true
+    },
+    "PermitState": {
+      "type": "string",
+      "required": true
+    },
+    "PermitZip5": {
+      "type": "string",
+      "required": true
+    },
+    "PermitZipPlus4": {
+      "type": "string"
+    },
+    "CREATED": {
+      "type": "date"
+    },
+    "CREATED_BY": {
+      "type": "string"
+    },
+    "LAST_UPDATED": {
+      "type": "date"
+    },
+    "UPDATED_BY": {
+      "type": "string"
+    }
+  },
   "validations": [],
   "relations": {},
   "acls": [],
