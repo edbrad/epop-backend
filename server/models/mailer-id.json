@@ -6,7 +6,49 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
+  "properties": {
+    "MailerID": {
+      "type": "string",
+      "required": true
+    },
+    "MailerName": {
+      "type": "string",
+      "required": true
+    },
+    "MailerContactName": {
+      "type": "string"
+    },
+    "MailerAddress1": {
+      "type": "string"
+    },
+    "MailerAddress2": {
+      "type": "string"
+    },
+    "MailerCity": {
+      "type": "string"
+    },
+    "MailerState": {
+      "type": "string"
+    },
+    "MailerZip5": {
+      "type": "string"
+    },
+    "MailerZipPlus4": {
+      "type": "string"
+    },
+    "CREATED": {
+      "type": "date"
+    },
+    "CREATED_BY": {
+      "type": "string"
+    },
+    "LAST_UPDATED": {
+      "type": "date"
+    },
+    "UPDATED_BY": {
+      "type": "string"
+    }
+  },
   "validations": [],
   "relations": {},
   "acls": [],

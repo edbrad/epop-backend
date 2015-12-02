@@ -85,7 +85,7 @@ $ slc loopback:property
 
 Field Name 		| Type 		| Description
 --- 			| --- 		| ---
-`Name` 			| string 	| Mail Owner Name/Company
+`Name` 			| string 	| Mail Owner Name/Company `[required]`
 `ContactName` 	| string 	| Mail Owner Contact C/O Name
 `Address1`		| string	| Primary Address Line
 `Address2`		| string	| Secondary Address Line
@@ -99,34 +99,47 @@ Field Name 		| Type 		| Description
 `LAST_UPDATED`	| date		| AUDIT - Date/Time of last update
 `UPDATED_BY`	| string	| AUDIT - User that updated the record
 
-###`CRIDs`
+`CRID's`
 
 Field Name 		| Type 		| Description
 --- 			| --- 		| ---
-`CRID` 			| string 	| USPS Customer Registration ID
+`CRID` 			| string 	| USPS Customer Registration ID `[required]`
 `MailOwnerId` 	| string 	| Related Mail Owner `(FK)`
 `CREATED`		| date		| AUDIT - Date/Time created
 `CREATED_BY`	| string	| AUDIT - User that created the record
 `LAST_UPDATED`	| date		| AUDIT - Date/Time of last update
 `UPDATED_BY`	| string	| AUDIT - User that updated the record
 
-###`Permits`
+`Permits`
 
 Field Name 		| Type 		| Description
 --- 			| --- 		| ---
-`PermitNumber` 	| string 	| USPS Permit Number
+`PermitNumber` 	| string 	| USPS Permit Number `[required]`
 `MailOwnerId` 	| string 	| Related Mail Owner `(FK)`
+`PermitCity`	| string	| Permit City `[required]`
+`PermitState`	| string	| Permit State Code `[required]`
+`PermitZip5`	| string	| Permit 5-digit ZipCode `[required]`
+`PermitZipPLus4`| string	| Permit Zip Plus4 Code
 `CREATED`		| date		| AUDIT - Date/Time created
 `CREATED_BY`	| string	| AUDIT - User that created the record
 `LAST_UPDATED`	| date		| AUDIT - Date/Time of last update
 `UPDATED_BY`	| string	| AUDIT - User that updated the record
 
-###`MailerIDs`
+`MailerID's`
 
 Field Name 		| Type 		| Description
 --- 			| --- 		| ---
-`MailerID` 		| string 	| USPS Mailer ID (6 or 9 Digits)
+`MailerID` 		| string 	| USPS Mailer ID (6 or 9 Digits) `[required]`
 `MailOwnerId` 	| string 	| Related Mail Owner `(FK)`
+`MailerName` 			| string 	| Mailer Name/Company `[required]`
+`MailerContactName` 	| string 	| Mailer Contact C/O Name
+`MailerAddress1`		| string	| Mailer Primary Address Line
+`MailerAddress2`		| string	| Mailer Secondary Address Line
+`MailerCity`			| string	| Mailer City
+`MailerState`			| string	| Mailer State Code
+`MailerZip5`			| string	| Mailer 5-digit ZipCode
+`MailerZipPLus4`		| string	| Mailer Zip Plus4 Code
+`MailerPhone`			| string	| Mailer Phone Number
 `CREATED`		| date		| AUDIT - Date/Time created
 `CREATED_BY`	| string	| AUDIT - User that created the record
 `LAST_UPDATED`	| date		| AUDIT - Date/Time of last update
