@@ -34,15 +34,21 @@
   },
   "MailOwner": {
     "dataSource": "db",
-    "public": true
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   },
   "CRID": {
     "dataSource": "db",
-    "public": true
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   },
   "Permit": {
     "dataSource": "db",
-    "public": true
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   },
   "MailerID": {
     "dataSource": "db",
