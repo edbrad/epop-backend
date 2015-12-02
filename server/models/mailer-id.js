@@ -1,3 +1,3 @@
-module.exports = function(MailerId) {
+module.exports = function(MailerID) {
 
 };

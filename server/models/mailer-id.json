@@ -1,6 +1,6 @@
 {
-  "name": "MailerId",
-  "plural": "MailerIds",
+  "name": "MailerID",
+  "plural": "MailerIDs",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
