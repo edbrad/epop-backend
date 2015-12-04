@@ -144,3 +144,25 @@ Field Name 		| Type 		| Description
 `CREATED_BY`	| string	| AUDIT - User that created the record
 `LAST_UPDATED`	| date		| AUDIT - Date/Time of last update
 `UPDATED_BY`	| string	| AUDIT - User that updated the record
+
+### Define the Model Relations:
+
+Define the relationships between the Models:
+
+```
+$ slc loopback:relation
+
+```
+
+MailOwner [Has Many] CRIDs
+
+MailOwner [Has Many] Permits
+
+MailOwner [Has Many] MailerIDs
+
+CRID 		[Belongs To] MailOwner (FK = MailOwnerId)
+
+Permit 		[Belongs To] MailOwner (FK = MailOwnerId)
+
+MailerID 	[Belongs To] MailOwner (FK = MailOwnerId)
+

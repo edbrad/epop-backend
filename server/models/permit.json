@@ -40,7 +40,12 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "MailOwner": {
+      "type": "belongsTo",
+      "model": "MailOwner"
+    }
+  },
   "acls": [],
   "methods": {}
 }

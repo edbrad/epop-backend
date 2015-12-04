@@ -49,7 +49,20 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "CRIDs": {
+      "type": "hasMany",
+      "model": "CRID"     
+    },
+    "Permits": {
+      "type": "hasMany",
+      "model": "Permit"    
+    },
+    "MailerIDs": {
+      "type": "hasMany",
+      "model": "MailerID"     
+    }
+  },
   "acls": [],
   "methods": {}
 }
