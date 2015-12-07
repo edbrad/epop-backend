@@ -2,5 +2,10 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "epop-backend": {
+    "database": "epop-backend",
+    "name": "epop-backend",
+    "connector": "mongodb"
   }
 }

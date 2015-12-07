@@ -53,7 +53,7 @@
   "relations": {
     "MailOwner": {
       "type": "belongsTo",
-      "model": "MailOwner"  
+      "model": "MailOwner"
     }
   },
   "acls": [],

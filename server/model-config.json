@@ -33,25 +33,25 @@
     "public": false
   },
   "MailOwner": {
-    "dataSource": "db",
+    "dataSource": "epop-backend",
     "public": true,
     "$promise": {},
     "$resolved": true
   },
   "CRID": {
-    "dataSource": "db",
+    "dataSource": "epop-backend",
     "public": true,
     "$promise": {},
     "$resolved": true
   },
   "Permit": {
-    "dataSource": "db",
+    "dataSource": "epop-backend",
     "public": true,
     "$promise": {},
     "$resolved": true
   },
   "MailerID": {
-    "dataSource": "db",
+    "dataSource": "epop-backend",
     "public": true,
     "$promise": {},
     "$resolved": true

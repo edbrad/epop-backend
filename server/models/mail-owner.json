@@ -52,15 +52,15 @@
   "relations": {
     "CRIDs": {
       "type": "hasMany",
-      "model": "CRID"     
+      "model": "CRID"
     },
     "Permits": {
       "type": "hasMany",
-      "model": "Permit"    
+      "model": "Permit"
     },
     "MailerIDs": {
       "type": "hasMany",
-      "model": "MailerID"     
+      "model": "MailerID"
     }
   },
   "acls": [],

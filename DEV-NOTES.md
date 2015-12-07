@@ -166,3 +166,14 @@ Permit 		[Belongs To] MailOwner (FK = MailOwnerId)
 
 MailerID 	[Belongs To] MailOwner (FK = MailOwnerId)
 
+
+
+## Add MongoDB as a Datasource
+
+Install LoopBack Connector for MongoDB
+
+```
+$ npm install --save loopback-connector-mongodb
+
+```
+
