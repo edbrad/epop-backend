@@ -177,3 +177,68 @@ $ npm install --save loopback-connector-mongodb
 
 ```
 
+The datasource can then be migrated from the built-in temp database (db) to MongoDB (using the Arc GUI or JSON config files). 
+
+model-config.json:
+
+```javascript
+
+  "MailOwner": {
+    "dataSource": "epop-backend",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "CRID": {
+    "dataSource": "epop-backend",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Permit": {
+    "dataSource": "epop-backend",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "MailerID": {
+    "dataSource": "epop-backend",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  }
+
+```
+
+datasources.json:
+
+```javascript
+
+  "epop-backend": {
+    "database": "epop-backend",
+    "name": "epop-backend",
+    "connector": "mongodb"
+  }
+
+```
+
+## Auto-Generate AngularJS Client/Front-end Javascript service code and API Documentation (Docular)
+
+AngularJS (1.20+) service code generation:
+
+```
+$ cd client
+$ mkdir js
+$ lb-ng ../server/server.js js/lb-services.js
+
+```
+
+Docular HTML generation
+
+```
+
+$ lb-ng-doc js/lb-services.js
+
+```
+
+
