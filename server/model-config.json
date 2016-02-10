@@ -55,5 +55,11 @@
     "public": true,
     "$promise": {},
     "$resolved": true
+  },
+  "eDocStatement": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }

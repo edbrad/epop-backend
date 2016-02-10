@@ -1,0 +1,2575 @@
+{
+  "name": "eDocStatement",
+  "plural": "eDocStatements",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Statement_ID": {
+      "type": "string",
+      "comments": "Statement ID"
+    },
+    "Daily_ID": {
+      "type": "string",
+      "comments": "Associated Daily Run ID"
+    },
+    "Description": {
+      "type": "string",
+      "comments": "Scheme Description"
+    },
+    "MailDate": {
+      "type": "string",
+      "comments": "Mail/Drop Date"
+    },
+    "PermitNumber": {
+      "type": "string",
+      "comments": "Assigned Permit Number"
+    },
+    "PermitCity": {
+      "type": "string",
+      "comments": "Assigned Permit City"
+    },
+    "PermitState": {
+      "type": "string",
+      "comments": "Assigned Permit State"
+    },
+    "PermitZip": {
+      "type": "string",
+      "comments": "Assigned Permit Zip Code"
+    },
+    "PermitHolderName": {
+      "type": "string",
+      "comments": "Name"
+    },
+    "PermitHolderAddress1": {
+      "type": "string",
+      "comments": "Address1"
+    },
+    "PermitHolderAddress2": {
+      "type": "string",
+      "comments": "Address2"
+    },
+    "PermitHolderCity": {
+      "type": "string",
+      "comments": "City"
+    },
+    "PermitHolderState": {
+      "type": "string",
+      "comments": "State"
+    },
+    "PermitHolderZipCode": {
+      "type": "string",
+      "comments": "Zip Code"
+    },
+    "PermitHolderPhone": {
+      "type": "string",
+      "comments": "Phone Number"
+    },
+    "PermitHolderMID": {
+      "type": "string",
+      "comments": "Mailer ID"
+    },
+    "PermitHolderCRID": {
+      "type": "string",
+      "comments": "CRID"
+    },
+    "IncentiveCode": {
+      "type": "string",
+      "comments": "USPS Discount Incentive Code"
+    },
+    "MailPreparerName": {
+      "type": "string",
+      "comments": "Name"
+    },
+    "MailPreparerAddress1": {
+      "type": "string",
+      "comments": "Address1"
+    },
+    "MailPreparerAddress2": {
+      "type": "string",
+      "comments": "Address2"
+    },
+    "MailPreparerCity": {
+      "type": "string",
+      "comments": "City"
+    },
+    "MailPreparerState": {
+      "type": "string",
+      "comments": "State"
+    },
+    "MailPreparerZipCode": {
+      "type": "string",
+      "comments": "Zip Code"
+    },
+    "MailPreparerPhone": {
+      "type": "string",
+      "comments": "Phone"
+    },
+    "MailPreparerMID": {
+      "type": "string",
+      "comments": "Mailer ID"
+    },
+    "MailPreparerCRID": {
+      "type": "string",
+      "comments": "CRID"
+    },
+    "MailOwnerName": {
+      "type": "string",
+      "comments": "Name"
+    },
+    "MailOwnerAddress1": {
+      "type": "string",
+      "comments": "Address1"
+    },
+    "MailOwnerAddress2": {
+      "type": "string",
+      "comments": "Address2"
+    },
+    "MailOwnerCity": {
+      "type": "string",
+      "comments": "City"
+    },
+    "MailOwnerState": {
+      "type": "string",
+      "comments": "State"
+    },
+    "MailOwnerZipCode": {
+      "type": "string",
+      "comments": "Zip Code"
+    },
+    "MailOwnerPhone": {
+      "type": "string",
+      "comments": "Phone"
+    },
+    "MailOwnerMID": {
+      "type": "string",
+      "comments": "Mailer ID"
+    },
+    "MailOwnerCRID": {
+      "type": "string",
+      "comments": "CRID"
+    },
+    "NonProfitAuthNbr": {
+      "type": "string",
+      "comments": "Non-Profit Authorization #"
+    },
+    "LocalPermitRefNbr": {
+      "type": "string",
+      "comments": "Local Permit/Reference #"
+    },
+    "IsGhostPermit": {
+      "type": "boolean",
+      "comments": "Ghost Permit?"
+    },
+    "TotalPieceCount": {
+      "type": "number",
+      "comments": "Total Pieces represented in this Statement"
+    },
+    "TotalPostage": {
+      "type": "number",
+      "comments": "Total Postage represented in this Statement"
+    },
+    "AllocatedPieceCount": {
+      "type": "number",
+      "comments": "Total Pieces allocated to this Statement"
+    },
+    "RemainingPieceCount": {
+      "type": "number",
+      "comments": "Remaining Pieces to be allocated to this Statement"
+    },
+    "FullServicePieceCount": {
+      "type": "number",
+      "comments": "Total Full Service Pieces represented in this Statement"
+    },
+    "StampAffixedAmount": {
+      "type": "number",
+      "comments": "Stamp Amount (MPU-1124)"
+    },
+    "MeterAffixedAmount": {
+      "type": "number",
+      "comments": "Meter Amount (MPU-1124)"
+    },
+    "FP_PI_Postage": {
+      "type": "number",
+      "comments": "For Profit - Permit Imprint Postage"
+    },
+    "FP_ST_Postage": {
+      "type": "number",
+      "comments": "For Profit - Stamp Postage"
+    },
+    "FP_MT_Postage": {
+      "type": "number",
+      "comments": "For Profit - Meter Postage"
+    },
+    "FP_PI_PieceCount": {
+      "type": "number",
+      "comments": "For Profit - Permit Imprint Piece Count"
+    },
+    "FP_ST_PieceCount": {
+      "type": "number",
+      "comments": "For Profit - Stamp Piece Count"
+    },
+    "FP_MT_PieceCount": {
+      "type": "number",
+      "comments": "For Profit - Meter Piece Count"
+    },
+    "FP_PI_CostPerPiece": {
+      "type": "number",
+      "comments": "For Profit - Permit Imprint Cost Per Piece"
+    },
+    "FP_ST_CostPerPiece": {
+      "type": "number",
+      "comments": "For Profit - Stamp Cost Per Piece"
+    },
+    "FP_MT_CostPerPiece": {
+      "type": "number",
+      "comments": "For Profit - Meter Cost Per Piece"
+    },
+    "NP_PI_Postage": {
+      "type": "number",
+      "comments": "Non-Profit - Permit Imprint Postage"
+    },
+    "NP_ST_Postage": {
+      "type": "number",
+      "comments": "Non-Profit - Stamp Postage"
+    },
+    "NP_MT_Postage": {
+      "type": "number",
+      "comments": "Non-Profit - Meter Postage"
+    },
+    "NP_PI_PieceCount": {
+      "type": "number",
+      "comments": "Non-Profit - Permit Imprint Piece Count"
+    },
+    "NP_ST_PieceCount": {
+      "type": "number",
+      "comments": "Non-Profit - Stamp Piece Count"
+    },
+    "NP_MT_PieceCount": {
+      "type": "number",
+      "comments": "Non-Profit - Meter Piece Count"
+    },
+    "NP_PI_CostPerPiece": {
+      "type": "number",
+      "comments": "Non-Profit - Permit Imprint Cost Per Piece"
+    },
+    "NP_ST_CostPerPiece": {
+      "type": "number",
+      "comments": "Non-Profit - Stamp Cost Per Piece"
+    },
+    "NP_MT_CostPerPiece": {
+      "type": "number",
+      "comments": "Non-Profit - Meter Cost Per Piece Count"
+    },
+    "FP_PI_NONE_5Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/None/5-Digit/Auto PS 3602 Code"
+    },
+    "FP_PI_NONE_5Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/None/5-Digit/Auto Entry Discount"
+    },
+    "FP_PI_NONE_5Digit_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/None/5-Digit/Auto Category"
+    },
+    "FP_PI_NONE_5Digit_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/None/5-Digit/Auto Price"
+    },
+    "FP_PI_NONE_5Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/None/5-Digit/Auto Postage"
+    },
+    "FP_PI_NONE_5Digit_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/None/5-Digit/Auto Count"
+    },
+    "FP_PI_NONE_3Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/None/3-Digit/Auto PS 3602 Code"
+    },
+    "FP_PI_NONE_3Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/None/3-Digit/Auto Entry Discount"
+    },
+    "FP_PI_NONE_3Digit_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/None/3-Digit/Auto Category"
+    },
+    "FP_PI_NONE_3Digit_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/None/3-Digit/Auto Price"
+    },
+    "FP_PI_NONE_3Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/None/3-Digit/Auto Postage"
+    },
+    "FP_PI_NONE_3Digit_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/None/3-Digit/Auto Count"
+    },
+    "FP_PI_NONE_AADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/None/AADC/Auto PS 3602 Code"
+    },
+    "FP_PI_NONE_AADC_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/None/AADC/Auto Entry Discount"
+    },
+    "FP_PI_NONE_AADC_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/None/AADC/Auto Category"
+    },
+    "FP_PI_NONE_AADC_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/None/AADC/Auto Price"
+    },
+    "FP_PI_NONE_AADC_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/None/AADC/Auto Postage"
+    },
+    "FP_PI_NONE_AADC_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/None/AADC/Auto Count"
+    },
+    "FP_PI_NONE_MxdAADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/None/MxdAADC/Auto PS 3602 Code"
+    },
+    "FP_PI_NONE_MxdAADC_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/None/MxdAADC/Auto Entry Discount"
+    },
+    "FP_PI_NONE_MxdAADC_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/None/MxdAADC/Auto Category"
+    },
+    "FP_PI_NONE_MxdAADC_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/None/MxdAADC/Auto Price"
+    },
+    "FP_PI_NONE_MxdAADC_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/None/MxdAADC/Auto Postage"
+    },
+    "FP_PI_NONE_MxdAADC_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/None/MxdAADC/Auto Count"
+    },
+    "FP_PI_DNDC_5Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DNDC/5-Digit/Auto PS 3602 Code"
+    },
+    "FP_PI_DNDC_5Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DNDC/5-Digit/Auto Entry Discount"
+    },
+    "FP_PI_DNDC_5Digit_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DNDC/5-Digit/Auto Category"
+    },
+    "FP_PI_DNDC_5Digit_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DNDC/5-Digit/Auto Price"
+    },
+    "FP_PI_DNDC_5Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DNDC/5-Digit/Auto Postage"
+    },
+    "FP_PI_DNDC_5Digit_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DNDC/5-Digit/Auto Count"
+    },
+    "FP_PI_DNDC_3Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DNDC/3-Digit/Auto PS 3602 Code"
+    },
+    "FP_PI_DNDC_3Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DNDC/3-Digit/Auto Entry Discount"
+    },
+    "FP_PI_DNDC_3Digit_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DNDC/3-Digit/Auto Category"
+    },
+    "FP_PI_DNDC_3Digit_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DNDC/3-Digit/Auto Price"
+    },
+    "FP_PI_DNDC_3Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DNDC/3-Digit/Auto Postage"
+    },
+    "FP_PI_DNDC_3Digit_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DNDC/3-Digit/Auto Count"
+    },
+    "FP_PI_DNDC_AADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DNDC/AADC/Auto PS 3602 Code"
+    },
+    "FP_PI_DNDC_AADC_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DNDC/AADC/Auto Entry Discount"
+    },
+    "FP_PI_DNDC_AADC_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DNDC/AADC/Auto Category"
+    },
+    "FP_PI_DNDC_AADC_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DNDC/AADC/Auto Price"
+    },
+    "FP_PI_DNDC_AADC_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DNDC/AADC/Auto Postage"
+    },
+    "FP_PI_DNDC_AADC_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DNDC/AADC/Auto Count"
+    },
+    "FP_PI_DNDC_MxdAADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DNDC/MxdAADC/Auto PS 3602 Code"
+    },
+    "FP_PI_DNDC_MxdAADC_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DNDC/MxdAADC/Auto Entry Discount"
+    },
+    "FP_PI_DNDC_MxdAADC_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DNDC/MxdAADC/Auto Category"
+    },
+    "FP_PI_DNDC_MxdAADC_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DNDC/MxdAADC/Auto Price"
+    },
+    "FP_PI_DNDC_MxdAADC_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DNDC/MxdAADC/Auto Postage"
+    },
+    "FP_PI_DNDC_MxdAADC_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DNDC/MxdAADC/Auto Count"
+    },
+    "FP_PI_DSCF_5Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DSCF/5-Digit/Auto PS 3602 Code"
+    },
+    "FP_PI_DSCF_5Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DSCF/5-Digit/Auto Entry Discount"
+    },
+    "FP_PI_DSCF_5Digit_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DSCF/5-Digit/Auto Category"
+    },
+    "FP_PI_DSCF_5Digit_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DSCF/5-Digit/Auto Price"
+    },
+    "FP_PI_DSCF_5Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DSCF/5-Digit/Auto Postage"
+    },
+    "FP_PI_DSCF_5Digit_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DSCF/5-Digit/Auto Count"
+    },
+    "FP_PI_DSCF_3Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DSCF/3-Digit/Auto PS 3602 Code"
+    },
+    "FP_PI_DSCF_3Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DSCF/3-Digit/Auto Entry Discount"
+    },
+    "FP_PI_DSCF_3Digit_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DSCF/3-Digit/Auto Category"
+    },
+    "FP_PI_DSCF_3Digit_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DSCF/3-Digit/Auto Price"
+    },
+    "FP_PI_DSCF_3Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DSCF/3-Digit/Auto Postage"
+    },
+    "FP_PI_DSCF_3Digit_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DSCF/3-Digit/Auto Count"
+    },
+    "FP_PI_DSCF_AADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DSCF/AADC/Auto PS 3602 Code"
+    },
+    "FP_PI_DSCF_AADC_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DSCF/AADC/Auto Entry Discount"
+    },
+    "FP_PI_DSCF_AADC_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DSCF/AADC/Auto Category"
+    },
+    "FP_PI_DSCF_AADC_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DSCF/AADC/Auto Price"
+    },
+    "FP_PI_DSCF_AADC_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DSCF/AADC/Auto Postage"
+    },
+    "FP_PI_DSCF_AADC_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DSCF/AADC/Auto Count"
+    },
+    "FP_ST_NONE_5Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/None/5-Digit/Auto PS 3602 Code"
+    },
+    "FP_ST_NONE_5Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/None/5-Digit/Auto Entry Discount"
+    },
+    "FP_ST_NONE_5Digit_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/None/5-Digit/Auto Category"
+    },
+    "FP_ST_NONE_5Digit_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/None/5-Digit/Auto Price"
+    },
+    "FP_ST_NONE_5Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/None/5-Digit/Auto Postage"
+    },
+    "FP_ST_NONE_5Digit_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/None/5-Digit/Auto Count"
+    },
+    "FP_ST_NONE_3Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/None/3-Digit/Auto PS 3602 Code"
+    },
+    "FP_ST_NONE_3Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/None/3-Digit/Auto Entry Discount"
+    },
+    "FP_ST_NONE_3Digit_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/None/3-Digit/Auto Category"
+    },
+    "FP_ST_NONE_3Digit_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/None/3-Digit/Auto Price"
+    },
+    "FP_ST_NONE_3Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/None/3-Digit/Auto Postage"
+    },
+    "FP_ST_NONE_3Digit_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/None/3-Digit/Auto Count"
+    },
+    "FP_ST_NONE_AADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/None/AADC/Auto PS 3602 Code"
+    },
+    "FP_ST_NONE_AADC_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/None/AADC/Auto Entry Discount"
+    },
+    "FP_ST_NONE_AADC_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/None/AADC/Auto Category"
+    },
+    "FP_ST_NONE_AADC_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Stampt/None/AADC/Auto Price"
+    },
+    "FP_ST_NONE_AADC_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/None/AADC/Auto Postage"
+    },
+    "FP_ST_NONE_AADC_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/None/AADC/Auto Count"
+    },
+    "FP_ST_NONE_MxdAADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/None/MxdAADC/Auto PS 3602 Code"
+    },
+    "FP_ST_NONE_MxdAADC_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/None/MxdAADC/Auto Entry Discount"
+    },
+    "FP_ST_NONE_MxdAADC_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/None/MxdAADC/Auto Category"
+    },
+    "FP_ST_NONE_MxdAADC_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/None/MxdAADC/Auto Price"
+    },
+    "FP_ST_NONE_MxdAADC_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/None/MxdAADC/Auto Postage"
+    },
+    "FP_ST_NONE_MxdAADC_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/None/MxdAADC/Auto Count"
+    },
+    "FP_ST_DNDC_5Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DNDC/5-Digit/Auto PS 3602 Code"
+    },
+    "FP_ST_DNDC_5Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DNDC/5-Digit/Auto Entry Discount"
+    },
+    "FP_ST_DNDC_5Digit_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DNDC/5-Digit/Auto Category"
+    },
+    "FP_ST_DNDC_5Digit_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DNDC/5-Digit/Auto Price"
+    },
+    "FP_ST_DNDC_5Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DNDC/5-Digit/Auto Postage"
+    },
+    "FP_ST_DNDC_5Digit_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DNDC/5-Digit/Auto Count"
+    },
+    "FP_ST_DNDC_3Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DNDC/3-Digit/Auto PS 3602 Code"
+    },
+    "FP_ST_DNDC_3Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DNDC/3-Digit/Auto Entry Discount"
+    },
+    "FP_ST_DNDC_3Digit_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DNDC/3-Digit/Auto Category"
+    },
+    "FP_ST_DNDC_3Digit_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DNDC/3-Digit/Auto Price"
+    },
+    "FP_ST_DNDC_3Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DNDC/3-Digit/Auto Postage"
+    },
+    "FP_ST_DNDC_3Digit_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DNDC/3-Digit/Auto Count"
+    },
+    "FP_ST_DNDC_AADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DNDC/AADC/Auto PS 3602 Code"
+    },
+    "FP_ST_DNDC_AADC_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DNDC/AADC/Auto Entry Discount"
+    },
+    "FP_ST_DNDC_AADC_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DNDC/AADC/Auto Category"
+    },
+    "FP_ST_DNDC_AADC_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DNDC/AADC/Auto Price"
+    },
+    "FP_ST_DNDC_AADC_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DNDC/AADC/Auto Postage"
+    },
+    "FP_ST_DNDC_AADC_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DNDC/AADC/Auto Count"
+    },
+    "FP_ST_DNDC_MxdAADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DNDC/MxdAADC/Auto PS 3602 Code"
+    },
+    "FP_ST_DNDC_MxdAADC_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DNDC/MxdAADC/Auto Entry Discount"
+    },
+    "FP_ST_DNDC_MxdAADC_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DNDC/MxdAADC/Auto Category"
+    },
+    "FP_ST_DNDC_MxdAADC_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DNDC/MxdAADC/Auto Price"
+    },
+    "FP_ST_DNDC_MxdAADC_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DNDC/MxdAADC/Auto Postage"
+    },
+    "FP_ST_DNDC_MxdAADC_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DNDC/MxdAADC/Auto Count"
+    },
+    "FP_ST_DSCF_5Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DSCF/5-Digit/Auto PS 3602 Code"
+    },
+    "FP_ST_DSCF_5Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DSCF/5-Digit/Auto Entry Discount"
+    },
+    "FP_ST_DSCF_5Digit_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DSCF/5-Digit/Auto Category"
+    },
+    "FP_ST_DSCF_5Digit_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DSCF/5-Digit/Auto Price"
+    },
+    "FP_ST_DSCF_5Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DSCF/5-Digit/Auto Postage"
+    },
+    "FP_ST_DSCF_5Digit_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DSCF/5-Digit/Auto Count"
+    },
+    "FP_ST_DSCF_3Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DSCF/3-Digit/Auto PS 3602 Code"
+    },
+    "FP_ST_DSCF_3Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DSCF/3-Digit/Auto Entry Discount"
+    },
+    "FP_ST_DSCF_3Digit_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DSCF/3-Digit/Auto Category"
+    },
+    "FP_ST_DSCF_3Digit_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DSCF/3-Digit/Auto Price"
+    },
+    "FP_ST_DSCF_3Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DSCF/3-Digit/Auto Postage"
+    },
+    "FP_ST_DSCF_3Digit_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DSCF/3-Digit/Auto Count"
+    },
+    "FP_ST_DSCF_AADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DSCF/AADC/Auto PS 3602 Code"
+    },
+    "FP_ST_DSCF_AADC_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DSCF/AADC/Auto Entry Discount"
+    },
+    "FP_ST_DSCF_AADC_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DSCF/AADC/Auto Category"
+    },
+    "FP_ST_DSCF_AADC_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DSCF/AADC/Auto Price"
+    },
+    "FP_ST_DSCF_AADC_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DSCF/AADC/Auto Postage"
+    },
+    "FP_ST_DSCF_AADC_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DSCF/AADC/Auto Count"
+    },
+    "FP_MT_NONE_5Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Meter/None/5-Digit/Auto PS 3602 Code"
+    },
+    "FP_MT_NONE_5Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Meter/None/5-Digit/Auto Entry Discount"
+    },
+    "FP_MT_NONE_5Digit_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Meter/None/5-Digit/Auto Category"
+    },
+    "FP_MT_NONE_5Digit_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Meter/None/5-Digit/Auto Price"
+    },
+    "FP_MT_NONE_5Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Meter/None/5-Digit/Auto Postage"
+    },
+    "FP_MT_NONE_5Digit_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Meter/None/5-Digit/Auto Count"
+    },
+    "FP_MT_NONE_3Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Meter/None/3-Digit/Auto PS 3602 Code"
+    },
+    "FP_MT_NONE_3Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Meter/None/3-Digit/Auto Entry Discount"
+    },
+    "FP_MT_NONE_3Digit_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Meter/None/3-Digit/Auto Category"
+    },
+    "FP_MT_NONE_3Digit_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Meter/None/3-Digit/Auto Price"
+    },
+    "FP_MT_NONE_3Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Meter/None/3-Digit/Auto Postage"
+    },
+    "FP_MT_NONE_3Digit_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Meter/None/3-Digit/Auto Count"
+    },
+    "FP_MT_NONE_AADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Meter/None/AADC/Auto PS 3602 Code"
+    },
+    "FP_MT_NONE_AADC_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Meter/None/AADC/Auto Entry Discount"
+    },
+    "FP_MT_NONE_AADC_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Meter/None/AADC/Auto Category"
+    },
+    "FP_MT_NONE_AADC_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Stampt/None/AADC/Auto Price"
+    },
+    "FP_MT_NONE_AADC_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Meter/None/AADC/Auto Postage"
+    },
+    "FP_MT_NONE_AADC_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Meter/None/AADC/Auto Count"
+    },
+    "FP_MT_NONE_MxdAADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Meter/None/MxdAADC/Auto PS 3602 Code"
+    },
+    "FP_MT_NONE_MxdAADC_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Meter/None/MxdAADC/Auto Entry Discount"
+    },
+    "FP_MT_NONE_MxdAADC_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Meter/None/MxdAADC/Auto Category"
+    },
+    "FP_MT_NONE_MxdAADC_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Meter/None/MxdAADC/Auto Price"
+    },
+    "FP_MT_NONE_MxdAADC_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Meter/None/MxdAADC/Auto Postage"
+    },
+    "FP_MT_NONE_MxdAADC_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Meter/None/MxdAADC/Auto Count"
+    },
+    "FP_MT_DNDC_5Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DNDC/5-Digit/Auto PS 3602 Code"
+    },
+    "FP_MT_DNDC_5Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DNDC/5-Digit/Auto Entry Discount"
+    },
+    "FP_MT_DNDC_5Digit_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DNDC/5-Digit/Auto Category"
+    },
+    "FP_MT_DNDC_5Digit_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DNDC/5-Digit/Auto Price"
+    },
+    "FP_MT_DNDC_5Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DNDC/5-Digit/Auto Postage"
+    },
+    "FP_MT_DNDC_5Digit_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DNDC/5-Digit/Auto Count"
+    },
+    "FP_MT_DNDC_3Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DNDC/3-Digit/Auto PS 3602 Code"
+    },
+    "FP_MT_DNDC_3Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DNDC/3-Digit/Auto Entry Discount"
+    },
+    "FP_MT_DNDC_3Digit_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DNDC/3-Digit/Auto Category"
+    },
+    "FP_MT_DNDC_3Digit_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DNDC/3-Digit/Auto Price"
+    },
+    "FP_MT_DNDC_3Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DNDC/3-Digit/Auto Postage"
+    },
+    "FP_MT_DNDC_3Digit_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DNDC/3-Digit/Auto Count"
+    },
+    "FP_MT_DNDC_AADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DNDC/AADC/Auto PS 3602 Code"
+    },
+    "FP_MT_DNDC_AADC_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DNDC/AADC/Auto Entry Discount"
+    },
+    "FP_MT_DNDC_AADC_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DNDC/AADC/Auto Category"
+    },
+    "FP_MT_DNDC_AADC_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DNDC/AADC/Auto Price"
+    },
+    "FP_MT_DNDC_AADC_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DNDC/AADC/Auto Postage"
+    },
+    "FP_MT_DNDC_AADC_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DNDC/AADC/Auto Count"
+    },
+    "FP_MT_DNDC_MxdAADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DNDC/MxdAADC/Auto PS 3602 Code"
+    },
+    "FP_MT_DNDC_MxdAADC_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DNDC/MxdAADC/Auto Entry Discount"
+    },
+    "FP_MT_DNDC_MxdAADC_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DNDC/MxdAADC/Auto Category"
+    },
+    "FP_MT_DNDC_MxdAADC_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DNDC/MxdAADC/Auto Price"
+    },
+    "FP_MT_DNDC_MxdAADC_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DNDC/MxdAADC/Auto Postage"
+    },
+    "FP_MT_DNDC_MxdAADC_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DNDC/MxdAADC/Auto Count"
+    },
+    "FP_MT_DSCF_5Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DSCF/5-Digit/Auto PS 3602 Code"
+    },
+    "FP_MT_DSCF_5Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DSCF/5-Digit/Auto Entry Discount"
+    },
+    "FP_MT_DSCF_5Digit_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DSCF/5-Digit/Auto Category"
+    },
+    "FP_MT_DSCF_5Digit_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DSCF/5-Digit/Auto Price"
+    },
+    "FP_MT_DSCF_5Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DSCF/5-Digit/Auto Postage"
+    },
+    "FP_MT_DSCF_5Digit_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DSCF/5-Digit/Auto Count"
+    },
+    "FP_MT_DSCF_3Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DSCF/3-Digit/Auto PS 3602 Code"
+    },
+    "FP_MT_DSCF_3Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DSCF/3-Digit/Auto Entry Discount"
+    },
+    "FP_MT_DSCF_3Digit_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DSCF/3-Digit/Auto Category"
+    },
+    "FP_MT_DSCF_3Digit_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DSCF/3-Digit/Auto Price"
+    },
+    "FP_MT_DSCF_3Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DSCF/3-Digit/Auto Postage"
+    },
+    "FP_MT_DSCF_3Digit_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DSCF/3-Digit/Auto Count"
+    },
+    "FP_MT_DSCF_AADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DSCF/AADC/Auto PS 3602 Code"
+    },
+    "FP_MT_DSCF_AADC_Auto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DSCF/AADC/Auto Entry Discount"
+    },
+    "FP_MT_DSCF_AADC_Auto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DSCF/AADC/Auto Category"
+    },
+    "FP_MT_DSCF_AADC_Auto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DSCF/AADC/Auto Price"
+    },
+    "FP_MT_DSCF_AADC_Auto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DSCF/AADC/Auto Postage"
+    },
+    "FP_MT_DSCF_AADC_Auto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DSCF/AADC/Auto Count"
+    },
+    "FP_PI_NONE_AADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/NONE/AADC/NonAuto PS 3602 Code"
+    },
+    "FP_PI_NONE_AADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/NONE/AADC/NonAuto Entry Discount"
+    },
+    "FP_PI_NONE_AADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/NONE/AADC/NonAuto Category"
+    },
+    "FP_PI_NONE_AADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/NONE/AADC/NonAuto Price"
+    },
+    "FP_PI_NONE_AADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/NONE/AADC/NonAuto Postage"
+    },
+    "FP_PI_NONE_AADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/NONE/AADC/NonAuto Count"
+    },
+    "FP_PI_NONE_MxdAADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/NONE/MxdAADC/NonAuto PS 3602 Code"
+    },
+    "FP_PI_NONE_MxdAADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/NONE/MxdAADC/NonAuto Entry Discount"
+    },
+    "FP_PI_NONE_MxdAADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/NONE/MxdAADC/NonAuto Category"
+    },
+    "FP_PI_NONE_MxdAADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/NONE/MxdAADC/NonAuto Price"
+    },
+    "FP_PI_NONE_MxdAADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/NONE/MxdAADC/NonAuto Postage"
+    },
+    "FP_PI_NONE_MxdAADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/NONE/MxdAADC/NonAuto Count"
+    },
+    "FP_PI_DNDC_AADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DNDC/AADC/NonAuto PS 3602 Code"
+    },
+    "FP_PI_DNDC_AADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DNDC/AADC/NonAuto Entry Discount"
+    },
+    "FP_PI_DNDC_AADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DNDC/AADC/NonAuto Category"
+    },
+    "FP_PI_DNDC_AADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DNDC/AADC/NonAuto Price"
+    },
+    "FP_PI_DNDC_AADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DNDC/AADC/NonAuto Postage"
+    },
+    "FP_PI_DNDC_AADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DNDC/AADC/NonAuto Count"
+    },
+    "FP_PI_DNDC_MxdAADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DNDC/MxdAADC/NonAuto PS 3602 Code"
+    },
+    "FP_PI_DNDC_MxdAADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DNDC/MxdAADC/NonAuto Entry Discount"
+    },
+    "FP_PI_DNDC_MxdAADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DNDC/MxdAADC/NonAuto Category"
+    },
+    "FP_PI_DNDC_MxdAADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DNDC/MxdAADC/NonAuto Price"
+    },
+    "FP_PI_DNDC_MxdAADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DNDC/MxdAADC/NonAuto Postage"
+    },
+    "FP_PI_DNDC_MxdAADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DNDC/MxdAADC/NonAuto Count"
+    },
+    "FP_PI_DSCF_AADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DSCF/AADC/NonAuto PS 3602 Code"
+    },
+    "FP_PI_DSCF_AADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DSCF/AADC/NonAuto Entry Discount"
+    },
+    "FP_PI_DSCF_AADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Permit Imprint/DSCF/AADC/NonAuto Category"
+    },
+    "FP_PI_DSCF_AADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DSCF/AADC/NonAuto Price"
+    },
+    "FP_PI_DSCF_AADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DSCF/AADC/NonAuto Postage"
+    },
+    "FP_PI_DSCF_AADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Permit Imprint/DSCF/AADC/NonAuto Count"
+    },
+    "FP_ST_NONE_AADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/NONE/AADC/NonAuto PS 3602 Code"
+    },
+    "FP_ST_NONE_AADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/NONE/AADC/NonAuto Entry Discount"
+    },
+    "FP_ST_NONE_AADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/NONE/AADC/NonAuto Category"
+    },
+    "FP_ST_NONE_AADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/NONE/AADC/NonAuto Price"
+    },
+    "FP_ST_NONE_AADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/NONE/AADC/NonAuto Postage"
+    },
+    "FP_ST_NONE_AADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/NONE/AADC/NonAuto Count"
+    },
+    "FP_ST_NONE_MxdAADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/NONE/MxdAADC/NonAuto PS 3602 Code"
+    },
+    "FP_ST_NONE_MxdAADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/NONE/MxdAADC/NonAuto Entry Discount"
+    },
+    "FP_ST_NONE_MxdAADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/NONE/MxdAADC/NonAuto Category"
+    },
+    "FP_ST_NONE_MxdAADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/NONE/MxdAADC/NonAuto Price"
+    },
+    "FP_ST_NONE_MxdAADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/NONE/MxdAADC/NonAuto Postage"
+    },
+    "FP_ST_NONE_MxdAADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/NONE/MxdAADC/NonAuto Count"
+    },
+    "FP_ST_DNDC_AADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DNDC/AADC/NonAuto PS 3602 Code"
+    },
+    "FP_ST_DNDC_AADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DNDC/AADC/NonAuto Entry Discount"
+    },
+    "FP_ST_DNDC_AADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DNDC/AADC/NonAuto Category"
+    },
+    "FP_ST_DNDC_AADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DNDC/AADC/NonAuto Price"
+    },
+    "FP_ST_DNDC_AADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DNDC/AADC/NonAuto Postage"
+    },
+    "FP_ST_DNDC_AADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DNDC/AADC/NonAuto Count"
+    },
+    "FP_ST_DNDC_MxdAADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DNDC/MxdAADC/NonAuto PS 3602 Code"
+    },
+    "FP_ST_DNDC_MxdAADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DNDC/MxdAADC/NonAuto Entry Discount"
+    },
+    "FP_ST_DNDC_MxdAADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DNDC/MxdAADC/NonAuto Category"
+    },
+    "FP_ST_DNDC_MxdAADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DNDC/MxdAADC/NonAuto Price"
+    },
+    "FP_ST_DNDC_MxdAADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DNDC/MxdAADC/NonAuto Postage"
+    },
+    "FP_ST_DNDC_MxdAADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DNDC/MxdAADC/NonAuto Count"
+    },
+    "FP_ST_DSCF_AADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DSCF/AADC/NonAuto PS 3602 Code"
+    },
+    "FP_ST_DSCF_AADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DSCF/AADC/NonAuto Entry Discount"
+    },
+    "FP_ST_DSCF_AADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Stamp/DSCF/AADC/NonAuto Category"
+    },
+    "FP_ST_DSCF_AADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DSCF/AADC/NonAuto Price"
+    },
+    "FP_ST_DSCF_AADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DSCF/AADC/NonAuto Postage"
+    },
+    "FP_ST_DSCF_AADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Stamp/DSCF/AADC/NonAuto Count"
+    },
+    "FP_MT_NONE_AADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Meter/NONE/AADC/NonAuto PS 3602 Code"
+    },
+    "FP_MT_NONE_AADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Meter/NONE/AADC/NonAuto Entry Discount"
+    },
+    "FP_MT_NONE_AADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Meter/NONE/AADC/NonAuto Category"
+    },
+    "FP_MT_NONE_AADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Meter/NONE/AADC/NonAuto Price"
+    },
+    "FP_MT_NONE_AADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Meter/NONE/AADC/NonAuto Postage"
+    },
+    "FP_MT_NONE_AADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Meter/NONE/AADC/NonAuto Count"
+    },
+    "FP_MT_NONE_MxdAADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Meter/NONE/MxdAADC/NonAuto PS 3602 Code"
+    },
+    "FP_MT_NONE_MxdAADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Meter/NONE/MxdAADC/NonAuto Entry Discount"
+    },
+    "FP_MT_NONE_MxdAADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Meter/NONE/MxdAADC/NonAuto Category"
+    },
+    "FP_MT_NONE_MxdAADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Meter/NONE/MxdAADC/NonAuto Price"
+    },
+    "FP_MT_NONE_MxdAADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Meter/NONE/MxdAADC/NonAuto Postage"
+    },
+    "FP_MT_NONE_MxdAADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Meter/NONE/MxdAADC/NonAuto Count"
+    },
+    "FP_MT_DNDC_AADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DNDC/AADC/NonAuto PS 3602 Code"
+    },
+    "FP_MT_DNDC_AADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DNDC/AADC/NonAuto Entry Discount"
+    },
+    "FP_MT_DNDC_AADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DNDC/AADC/NonAuto Category"
+    },
+    "FP_MT_DNDC_AADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DNDC/AADC/NonAuto Price"
+    },
+    "FP_MT_DNDC_AADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DNDC/AADC/NonAuto Postage"
+    },
+    "FP_MT_DNDC_AADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DNDC/AADC/NonAuto Count"
+    },
+    "FP_MT_DNDC_MxdAADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DNDC/MxdAADC/NonAuto PS 3602 Code"
+    },
+    "FP_MT_DNDC_MxdAADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DNDC/MxdAADC/NonAuto Entry Discount"
+    },
+    "FP_MT_DNDC_MxdAADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DNDC/MxdAADC/NonAuto Category"
+    },
+    "FP_MT_DNDC_MxdAADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DNDC/MxdAADC/NonAuto Price"
+    },
+    "FP_MT_DNDC_MxdAADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DNDC/MxdAADC/NonAuto Postage"
+    },
+    "FP_MT_DNDC_MxdAADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DNDC/MxdAADC/NonAuto Count"
+    },
+    "FP_MT_DSCF_AADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DSCF/AADC/NonAuto PS 3602 Code"
+    },
+    "FP_MT_DSCF_AADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DSCF/AADC/NonAuto Entry Discount"
+    },
+    "FP_MT_DSCF_AADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "For-Profit/Meter/DSCF/AADC/NonAuto Category"
+    },
+    "FP_MT_DSCF_AADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DSCF/AADC/NonAuto Price"
+    },
+    "FP_MT_DSCF_AADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DSCF/AADC/NonAuto Postage"
+    },
+    "FP_MT_DSCF_AADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "For-Profit/Meter/DSCF/AADC/NonAuto Count"
+    },
+    "NP_PI_NONE_5Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/None/5-Digit/Auto PS 3602 Code"
+    },
+    "NP_PI_NONE_5Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/None/5-Digit/Auto Entry Discount"
+    },
+    "NP_PI_NONE_5Digit_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/None/5-Digit/Auto Category"
+    },
+    "NP_PI_NONE_5Digit_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/None/5-Digit/Auto Price"
+    },
+    "NP_PI_NONE_5Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/None/5-Digit/Auto Postage"
+    },
+    "NP_PI_NONE_5Digit_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/None/5-Digit/Auto Count"
+    },
+    "NP_PI_NONE_3Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/None/3-Digit/Auto PS 3602 Code"
+    },
+    "NP_PI_NONE_3Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/None/3-Digit/Auto Entry Discount"
+    },
+    "NP_PI_NONE_3Digit_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/None/3-Digit/Auto Category"
+    },
+    "NP_PI_NONE_3Digit_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/None/3-Digit/Auto Price"
+    },
+    "NP_PI_NONE_3Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/None/3-Digit/Auto Postage"
+    },
+    "NP_PI_NONE_3Digit_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/None/3-Digit/Auto Count"
+    },
+    "NP_PI_NONE_AADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/None/AADC/Auto PS 3602 Code"
+    },
+    "NP_PI_NONE_AADC_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/None/AADC/Auto Entry Discount"
+    },
+    "NP_PI_NONE_AADC_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/None/AADC/Auto Category"
+    },
+    "NP_PI_NONE_AADC_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/None/AADC/Auto Price"
+    },
+    "NP_PI_NONE_AADC_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/None/AADC/Auto Postage"
+    },
+    "NP_PI_NONE_AADC_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/None/AADC/Auto Count"
+    },
+    "NP_PI_NONE_MxdAADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/None/MxdAADC/Auto PS 3602 Code"
+    },
+    "NP_PI_NONE_MxdAADC_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/None/MxdAADC/Auto Entry Discount"
+    },
+    "NP_PI_NONE_MxdAADC_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/None/MxdAADC/Auto Category"
+    },
+    "NP_PI_NONE_MxdAADC_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/None/MxdAADC/Auto Price"
+    },
+    "NP_PI_NONE_MxdAADC_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/None/MxdAADC/Auto Postage"
+    },
+    "NP_PI_NONE_MxdAADC_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/None/MxdAADC/Auto Count"
+    },
+    "NP_PI_DNDC_5Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DNDC/5-Digit/Auto PS 3602 Code"
+    },
+    "NP_PI_DNDC_5Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DNDC/5-Digit/Auto Entry Discount"
+    },
+    "NP_PI_DNDC_5Digit_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DNDC/5-Digit/Auto Category"
+    },
+    "NP_PI_DNDC_5Digit_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DNDC/5-Digit/Auto Price"
+    },
+    "NP_PI_DNDC_5Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DNDC/5-Digit/Auto Postage"
+    },
+    "NP_PI_DNDC_5Digit_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DNDC/5-Digit/Auto Count"
+    },
+    "NP_PI_DNDC_3Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DNDC/3-Digit/Auto PS 3602 Code"
+    },
+    "NP_PI_DNDC_3Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DNDC/3-Digit/Auto Entry Discount"
+    },
+    "NP_PI_DNDC_3Digit_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DNDC/3-Digit/Auto Category"
+    },
+    "NP_PI_DNDC_3Digit_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DNDC/3-Digit/Auto Price"
+    },
+    "NP_PI_DNDC_3Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DNDC/3-Digit/Auto Postage"
+    },
+    "NP_PI_DNDC_3Digit_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DNDC/3-Digit/Auto Count"
+    },
+    "NP_PI_DNDC_AADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DNDC/AADC/Auto PS 3602 Code"
+    },
+    "NP_PI_DNDC_AADC_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DNDC/AADC/Auto Entry Discount"
+    },
+    "NP_PI_DNDC_AADC_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DNDC/AADC/Auto Category"
+    },
+    "NP_PI_DNDC_AADC_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DNDC/AADC/Auto Price"
+    },
+    "NP_PI_DNDC_AADC_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DNDC/AADC/Auto Postage"
+    },
+    "NP_PI_DNDC_AADC_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DNDC/AADC/Auto Count"
+    },
+    "NP_PI_DNDC_MxdAADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DNDC/MxdAADC/Auto PS 3602 Code"
+    },
+    "NP_PI_DNDC_MxdAADC_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DNDC/MxdAADC/Auto Entry Discount"
+    },
+    "NP_PI_DNDC_MxdAADC_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DNDC/MxdAADC/Auto Category"
+    },
+    "NP_PI_DNDC_MxdAADC_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DNDC/MxdAADC/Auto Price"
+    },
+    "NP_PI_DNDC_MxdAADC_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DNDC/MxdAADC/Auto Postage"
+    },
+    "NP_PI_DNDC_MxdAADC_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DNDC/MxdAADC/Auto Count"
+    },
+    "NP_PI_DSCF_5Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DSCF/5-Digit/Auto PS 3602 Code"
+    },
+    "NP_PI_DSCF_5Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DSCF/5-Digit/Auto Entry Discount"
+    },
+    "NP_PI_DSCF_5Digit_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DSCF/5-Digit/Auto Category"
+    },
+    "NP_PI_DSCF_5Digit_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DSCF/5-Digit/Auto Price"
+    },
+    "NP_PI_DSCF_5Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DSCF/5-Digit/Auto Postage"
+    },
+    "NP_PI_DSCF_5Digit_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DSCF/5-Digit/Auto Count"
+    },
+    "NP_PI_DSCF_3Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DSCF/3-Digit/Auto PS 3602 Code"
+    },
+    "NP_PI_DSCF_3Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DSCF/3-Digit/Auto Entry Discount"
+    },
+    "NP_PI_DSCF_3Digit_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DSCF/3-Digit/Auto Category"
+    },
+    "NP_PI_DSCF_3Digit_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DSCF/3-Digit/Auto Price"
+    },
+    "NP_PI_DSCF_3Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DSCF/3-Digit/Auto Postage"
+    },
+    "NP_PI_DSCF_3Digit_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DSCF/3-Digit/Auto Count"
+    },
+    "NP_PI_DSCF_AADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DSCF/AADC/Auto PS 3602 Code"
+    },
+    "NP_PI_DSCF_AADC_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DSCF/AADC/Auto Entry Discount"
+    },
+    "NP_PI_DSCF_AADC_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DSCF/AADC/Auto Category"
+    },
+    "NP_PI_DSCF_AADC_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DSCF/AADC/Auto Price"
+    },
+    "NP_PI_DSCF_AADC_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DSCF/AADC/Auto Postage"
+    },
+    "NP_PI_DSCF_AADC_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DSCF/AADC/Auto Count"
+    },
+    "NP_ST_NONE_5Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/None/5-Digit/Auto PS 3602 Code"
+    },
+    "NP_ST_NONE_5Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/None/5-Digit/Auto Entry Discount"
+    },
+    "NP_ST_NONE_5Digit_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/None/5-Digit/Auto Category"
+    },
+    "NP_ST_NONE_5Digit_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/None/5-Digit/Auto Price"
+    },
+    "NP_ST_NONE_5Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/None/5-Digit/Auto Postage"
+    },
+    "NP_ST_NONE_5Digit_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/None/5-Digit/Auto Count"
+    },
+    "NP_ST_NONE_3Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/None/3-Digit/Auto PS 3602 Code"
+    },
+    "NP_ST_NONE_3Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/None/3-Digit/Auto Entry Discount"
+    },
+    "NP_ST_NONE_3Digit_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/None/3-Digit/Auto Category"
+    },
+    "NP_ST_NONE_3Digit_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/None/3-Digit/Auto Price"
+    },
+    "NP_ST_NONE_3Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/None/3-Digit/Auto Postage"
+    },
+    "NP_ST_NONE_3Digit_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/None/3-Digit/Auto Count"
+    },
+    "NP_ST_NONE_AADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/None/AADC/Auto PS 3602 Code"
+    },
+    "NP_ST_NONE_AADC_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/None/AADC/Auto Entry Discount"
+    },
+    "NP_ST_NONE_AADC_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/None/AADC/Auto Category"
+    },
+    "NP_ST_NONE_AADC_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Stampt/None/AADC/Auto Price"
+    },
+    "NP_ST_NONE_AADC_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/None/AADC/Auto Postage"
+    },
+    "NP_ST_NONE_AADC_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/None/AADC/Auto Count"
+    },
+    "NP_ST_NONE_MxdAADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/None/MxdAADC/Auto PS 3602 Code"
+    },
+    "NP_ST_NONE_MxdAADC_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/None/MxdAADC/Auto Entry Discount"
+    },
+    "NP_ST_NONE_MxdAADC_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/None/MxdAADC/Auto Category"
+    },
+    "NP_ST_NONE_MxdAADC_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/None/MxdAADC/Auto Price"
+    },
+    "NP_ST_NONE_MxdAADC_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/None/MxdAADC/Auto Postage"
+    },
+    "NP_ST_NONE_MxdAADC_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/None/MxdAADC/Auto Count"
+    },
+    "NP_ST_DNDC_5Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DNDC/5-Digit/Auto PS 3602 Code"
+    },
+    "NP_ST_DNDC_5Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DNDC/5-Digit/Auto Entry Discount"
+    },
+    "NP_ST_DNDC_5Digit_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DNDC/5-Digit/Auto Category"
+    },
+    "NP_ST_DNDC_5Digit_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DNDC/5-Digit/Auto Price"
+    },
+    "NP_ST_DNDC_5Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DNDC/5-Digit/Auto Postage"
+    },
+    "NP_ST_DNDC_5Digit_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DNDC/5-Digit/Auto Count"
+    },
+    "NP_ST_DNDC_3Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DNDC/3-Digit/Auto PS 3602 Code"
+    },
+    "NP_ST_DNDC_3Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DNDC/3-Digit/Auto Entry Discount"
+    },
+    "NP_ST_DNDC_3Digit_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DNDC/3-Digit/Auto Category"
+    },
+    "NP_ST_DNDC_3Digit_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DNDC/3-Digit/Auto Price"
+    },
+    "NP_ST_DNDC_3Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DNDC/3-Digit/Auto Postage"
+    },
+    "NP_ST_DNDC_3Digit_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DNDC/3-Digit/Auto Count"
+    },
+    "NP_ST_DNDC_AADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DNDC/AADC/Auto PS 3602 Code"
+    },
+    "NP_ST_DNDC_AADC_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DNDC/AADC/Auto Entry Discount"
+    },
+    "NP_ST_DNDC_AADC_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DNDC/AADC/Auto Category"
+    },
+    "NP_ST_DNDC_AADC_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DNDC/AADC/Auto Price"
+    },
+    "NP_ST_DNDC_AADC_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DNDC/AADC/Auto Postage"
+    },
+    "NP_ST_DNDC_AADC_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DNDC/AADC/Auto Count"
+    },
+    "NP_ST_DNDC_MxdAADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DNDC/MxdAADC/Auto PS 3602 Code"
+    },
+    "NP_ST_DNDC_MxdAADC_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DNDC/MxdAADC/Auto Entry Discount"
+    },
+    "NP_ST_DNDC_MxdAADC_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DNDC/MxdAADC/Auto Category"
+    },
+    "NP_ST_DNDC_MxdAADC_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DNDC/MxdAADC/Auto Price"
+    },
+    "NP_ST_DNDC_MxdAADC_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DNDC/MxdAADC/Auto Postage"
+    },
+    "NP_ST_DNDC_MxdAADC_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DNDC/MxdAADC/Auto Count"
+    },
+    "NP_ST_DSCF_5Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DSCF/5-Digit/Auto PS 3602 Code"
+    },
+    "NP_ST_DSCF_5Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DSCF/5-Digit/Auto Entry Discount"
+    },
+    "NP_ST_DSCF_5Digit_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DSCF/5-Digit/Auto Category"
+    },
+    "NP_ST_DSCF_5Digit_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DSCF/5-Digit/Auto Price"
+    },
+    "NP_ST_DSCF_5Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DSCF/5-Digit/Auto Postage"
+    },
+    "NP_ST_DSCF_5Digit_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DSCF/5-Digit/Auto Count"
+    },
+    "NP_ST_DSCF_3Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DSCF/3-Digit/Auto PS 3602 Code"
+    },
+    "NP_ST_DSCF_3Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DSCF/3-Digit/Auto Entry Discount"
+    },
+    "NP_ST_DSCF_3Digit_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DSCF/3-Digit/Auto Category"
+    },
+    "NP_ST_DSCF_3Digit_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DSCF/3-Digit/Auto Price"
+    },
+    "NP_ST_DSCF_3Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DSCF/3-Digit/Auto Postage"
+    },
+    "NP_ST_DSCF_3Digit_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DSCF/3-Digit/Auto Count"
+    },
+    "NP_ST_DSCF_AADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DSCF/AADC/Auto PS 3602 Code"
+    },
+    "NP_ST_DSCF_AADC_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DSCF/AADC/Auto Entry Discount"
+    },
+    "NP_ST_DSCF_AADC_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DSCF/AADC/Auto Category"
+    },
+    "NP_ST_DSCF_AADC_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DSCF/AADC/Auto Price"
+    },
+    "NP_ST_DSCF_AADC_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DSCF/AADC/Auto Postage"
+    },
+    "NP_ST_DSCF_AADC_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DSCF/AADC/Auto Count"
+    },
+    "NP_MT_NONE_5Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/None/5-Digit/Auto PS 3602 Code"
+    },
+    "NP_MT_NONE_5Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/None/5-Digit/Auto Entry Discount"
+    },
+    "NP_MT_NONE_5Digit_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/None/5-Digit/Auto Category"
+    },
+    "NP_MT_NONE_5Digit_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/None/5-Digit/Auto Price"
+    },
+    "NP_MT_NONE_5Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/None/5-Digit/Auto Postage"
+    },
+    "NP_MT_NONE_5Digit_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/None/5-Digit/Auto Count"
+    },
+    "NP_MT_NONE_3Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/None/3-Digit/Auto PS 3602 Code"
+    },
+    "NP_MT_NONE_3Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/None/3-Digit/Auto Entry Discount"
+    },
+    "NP_MT_NONE_3Digit_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/None/3-Digit/Auto Category"
+    },
+    "NP_MT_NONE_3Digit_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/None/3-Digit/Auto Price"
+    },
+    "NP_MT_NONE_3Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/None/3-Digit/Auto Postage"
+    },
+    "NP_MT_NONE_3Digit_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/None/3-Digit/Auto Count"
+    },
+    "NP_MT_NONE_AADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/None/AADC/Auto PS 3602 Code"
+    },
+    "NP_MT_NONE_AADC_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/None/AADC/Auto Entry Discount"
+    },
+    "NP_MT_NONE_AADC_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/None/AADC/Auto Category"
+    },
+    "NP_MT_NONE_AADC_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Stampt/None/AADC/Auto Price"
+    },
+    "NP_MT_NONE_AADC_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/None/AADC/Auto Postage"
+    },
+    "NP_MT_NONE_AADC_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/None/AADC/Auto Count"
+    },
+    "NP_MT_NONE_MxdAADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/None/MxdAADC/Auto PS 3602 Code"
+    },
+    "NP_MT_NONE_MxdAADC_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/None/MxdAADC/Auto Entry Discount"
+    },
+    "NP_MT_NONE_MxdAADC_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/None/MxdAADC/Auto Category"
+    },
+    "NP_MT_NONE_MxdAADC_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/None/MxdAADC/Auto Price"
+    },
+    "NP_MT_NONE_MxdAADC_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/None/MxdAADC/Auto Postage"
+    },
+    "NP_MT_NONE_MxdAADC_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/None/MxdAADC/Auto Count"
+    },
+    "NP_MT_DNDC_5Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DNDC/5-Digit/Auto PS 3602 Code"
+    },
+    "NP_MT_DNDC_5Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DNDC/5-Digit/Auto Entry Discount"
+    },
+    "NP_MT_DNDC_5Digit_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DNDC/5-Digit/Auto Category"
+    },
+    "NP_MT_DNDC_5Digit_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DNDC/5-Digit/Auto Price"
+    },
+    "NP_MT_DNDC_5Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DNDC/5-Digit/Auto Postage"
+    },
+    "NP_MT_DNDC_5Digit_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DNDC/5-Digit/Auto Count"
+    },
+    "NP_MT_DNDC_3Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DNDC/3-Digit/Auto PS 3602 Code"
+    },
+    "NP_MT_DNDC_3Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DNDC/3-Digit/Auto Entry Discount"
+    },
+    "NP_MT_DNDC_3Digit_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DNDC/3-Digit/Auto Category"
+    },
+    "NP_MT_DNDC_3Digit_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DNDC/3-Digit/Auto Price"
+    },
+    "NP_MT_DNDC_3Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DNDC/3-Digit/Auto Postage"
+    },
+    "NP_MT_DNDC_3Digit_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DNDC/3-Digit/Auto Count"
+    },
+    "NP_MT_DNDC_AADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DNDC/AADC/Auto PS 3602 Code"
+    },
+    "NP_MT_DNDC_AADC_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DNDC/AADC/Auto Entry Discount"
+    },
+    "NP_MT_DNDC_AADC_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DNDC/AADC/Auto Category"
+    },
+    "NP_MT_DNDC_AADC_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DNDC/AADC/Auto Price"
+    },
+    "NP_MT_DNDC_AADC_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DNDC/AADC/Auto Postage"
+    },
+    "NP_MT_DNDC_AADC_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DNDC/AADC/Auto Count"
+    },
+    "NP_MT_DNDC_MxdAADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DNDC/MxdAADC/Auto PS 3602 Code"
+    },
+    "NP_MT_DNDC_MxdAADC_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DNDC/MxdAADC/Auto Entry Discount"
+    },
+    "NP_MT_DNDC_MxdAADC_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DNDC/MxdAADC/Auto Category"
+    },
+    "NP_MT_DNDC_MxdAADC_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DNDC/MxdAADC/Auto Price"
+    },
+    "NP_MT_DNDC_MxdAADC_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DNDC/MxdAADC/Auto Postage"
+    },
+    "NP_MT_DNDC_MxdAADC_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DNDC/MxdAADC/Auto Count"
+    },
+    "NP_MT_DSCF_5Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DSCF/5-Digit/Auto PS 3602 Code"
+    },
+    "NP_MT_DSCF_5Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DSCF/5-Digit/Auto Entry Discount"
+    },
+    "NP_MT_DSCF_5Digit_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DSCF/5-Digit/Auto Category"
+    },
+    "NP_MT_DSCF_5Digit_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DSCF/5-Digit/Auto Price"
+    },
+    "NP_MT_DSCF_5Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DSCF/5-Digit/Auto Postage"
+    },
+    "NP_MT_DSCF_5Digit_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DSCF/5-Digit/Auto Count"
+    },
+    "NP_MT_DSCF_3Digit_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DSCF/3-Digit/Auto PS 3602 Code"
+    },
+    "NP_MT_DSCF_3Digit_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DSCF/3-Digit/Auto Entry Discount"
+    },
+    "NP_MT_DSCF_3Digit_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DSCF/3-Digit/Auto Category"
+    },
+    "NP_MT_DSCF_3Digit_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DSCF/3-Digit/Auto Price"
+    },
+    "NP_MT_DSCF_3Digit_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DSCF/3-Digit/Auto Postage"
+    },
+    "NP_MT_DSCF_3Digit_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DSCF/3-Digit/Auto Count"
+    },
+    "NP_MT_DSCF_AADC_Auto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DSCF/AADC/Auto PS 3602 Code"
+    },
+    "NP_MT_DSCF_AADC_Auto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DSCF/AADC/Auto Entry Discount"
+    },
+    "NP_MT_DSCF_AADC_Auto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DSCF/AADC/Auto Category"
+    },
+    "NP_MT_DSCF_AADC_Auto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DSCF/AADC/Auto Price"
+    },
+    "NP_MT_DSCF_AADC_Auto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DSCF/AADC/Auto Postage"
+    },
+    "NP_MT_DSCF_AADC_Auto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DSCF/AADC/Auto Count"
+    },
+    "NP_PI_NONE_AADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/NONE/AADC/NonAuto PS 3602 Code"
+    },
+    "NP_PI_NONE_AADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/NONE/AADC/NonAuto Entry Discount"
+    },
+    "NP_PI_NONE_AADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/NONE/AADC/NonAuto Category"
+    },
+    "NP_PI_NONE_AADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/NONE/AADC/NonAuto Price"
+    },
+    "NP_PI_NONE_AADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/NONE/AADC/NonAuto Postage"
+    },
+    "NP_PI_NONE_AADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/NONE/AADC/NonAuto Count"
+    },
+    "NP_PI_NONE_MxdAADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/NONE/MxdAADC/NonAuto PS 3602 Code"
+    },
+    "NP_PI_NONE_MxdAADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/NONE/MxdAADC/NonAuto Entry Discount"
+    },
+    "NP_PI_NONE_MxdAADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/NONE/MxdAADC/NonAuto Category"
+    },
+    "NP_PI_NONE_MxdAADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/NONE/MxdAADC/NonAuto Price"
+    },
+    "NP_PI_NONE_MxdAADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/NONE/MxdAADC/NonAuto Postage"
+    },
+    "NP_PI_NONE_MxdAADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/NONE/MxdAADC/NonAuto Count"
+    },
+    "NP_PI_DNDC_AADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DNDC/AADC/NonAuto PS 3602 Code"
+    },
+    "NP_PI_DNDC_AADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DNDC/AADC/NonAuto Entry Discount"
+    },
+    "NP_PI_DNDC_AADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DNDC/AADC/NonAuto Category"
+    },
+    "NP_PI_DNDC_AADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DNDC/AADC/NonAuto Price"
+    },
+    "NP_PI_DNDC_AADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DNDC/AADC/NonAuto Postage"
+    },
+    "NP_PI_DNDC_AADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DNDC/AADC/NonAuto Count"
+    },
+    "NP_PI_DNDC_MxdAADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DNDC/MxdAADC/NonAuto PS 3602 Code"
+    },
+    "NP_PI_DNDC_MxdAADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DNDC/MxdAADC/NonAuto Entry Discount"
+    },
+    "NP_PI_DNDC_MxdAADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DNDC/MxdAADC/NonAuto Category"
+    },
+    "NP_PI_DNDC_MxdAADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DNDC/MxdAADC/NonAuto Price"
+    },
+    "NP_PI_DNDC_MxdAADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DNDC/MxdAADC/NonAuto Postage"
+    },
+    "NP_PI_DNDC_MxdAADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DNDC/MxdAADC/NonAuto Count"
+    },
+    "NP_PI_DSCF_AADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DSCF/AADC/NonAuto PS 3602 Code"
+    },
+    "NP_PI_DSCF_AADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DSCF/AADC/NonAuto Entry Discount"
+    },
+    "NP_PI_DSCF_AADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Permit Imprint/DSCF/AADC/NonAuto Category"
+    },
+    "NP_PI_DSCF_AADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DSCF/AADC/NonAuto Price"
+    },
+    "NP_PI_DSCF_AADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DSCF/AADC/NonAuto Postage"
+    },
+    "NP_PI_DSCF_AADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Permit Imprint/DSCF/AADC/NonAuto Count"
+    },
+    "NP_ST_NONE_AADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/NONE/AADC/NonAuto PS 3602 Code"
+    },
+    "NP_ST_NONE_AADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/NONE/AADC/NonAuto Entry Discount"
+    },
+    "NP_ST_NONE_AADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/NONE/AADC/NonAuto Category"
+    },
+    "NP_ST_NONE_AADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/NONE/AADC/NonAuto Price"
+    },
+    "NP_ST_NONE_AADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/NONE/AADC/NonAuto Postage"
+    },
+    "NP_ST_NONE_AADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/NONE/AADC/NonAuto Count"
+    },
+    "NP_ST_NONE_MxdAADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/NONE/MxdAADC/NonAuto PS 3602 Code"
+    },
+    "NP_ST_NONE_MxdAADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/NONE/MxdAADC/NonAuto Entry Discount"
+    },
+    "NP_ST_NONE_MxdAADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/NONE/MxdAADC/NonAuto Category"
+    },
+    "NP_ST_NONE_MxdAADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/NONE/MxdAADC/NonAuto Price"
+    },
+    "NP_ST_NONE_MxdAADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/NONE/MxdAADC/NonAuto Postage"
+    },
+    "NP_ST_NONE_MxdAADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/NONE/MxdAADC/NonAuto Count"
+    },
+    "NP_ST_DNDC_AADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DNDC/AADC/NonAuto PS 3602 Code"
+    },
+    "NP_ST_DNDC_AADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DNDC/AADC/NonAuto Entry Discount"
+    },
+    "NP_ST_DNDC_AADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DNDC/AADC/NonAuto Category"
+    },
+    "NP_ST_DNDC_AADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DNDC/AADC/NonAuto Price"
+    },
+    "NP_ST_DNDC_AADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DNDC/AADC/NonAuto Postage"
+    },
+    "NP_ST_DNDC_AADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DNDC/AADC/NonAuto Count"
+    },
+    "NP_ST_DNDC_MxdAADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DNDC/MxdAADC/NonAuto PS 3602 Code"
+    },
+    "NP_ST_DNDC_MxdAADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DNDC/MxdAADC/NonAuto Entry Discount"
+    },
+    "NP_ST_DNDC_MxdAADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DNDC/MxdAADC/NonAuto Category"
+    },
+    "NP_ST_DNDC_MxdAADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DNDC/MxdAADC/NonAuto Price"
+    },
+    "NP_ST_DNDC_MxdAADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DNDC/MxdAADC/NonAuto Postage"
+    },
+    "NP_ST_DNDC_MxdAADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DNDC/MxdAADC/NonAuto Count"
+    },
+    "NP_ST_DSCF_AADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DSCF/AADC/NonAuto PS 3602 Code"
+    },
+    "NP_ST_DSCF_AADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DSCF/AADC/NonAuto Entry Discount"
+    },
+    "NP_ST_DSCF_AADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Stamp/DSCF/AADC/NonAuto Category"
+    },
+    "NP_ST_DSCF_AADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DSCF/AADC/NonAuto Price"
+    },
+    "NP_ST_DSCF_AADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DSCF/AADC/NonAuto Postage"
+    },
+    "NP_ST_DSCF_AADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Stamp/DSCF/AADC/NonAuto Count"
+    },
+    "NP_MT_NONE_AADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/NONE/AADC/NonAuto PS 3602 Code"
+    },
+    "NP_MT_NONE_AADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/NONE/AADC/NonAuto Entry Discount"
+    },
+    "NP_MT_NONE_AADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/NONE/AADC/NonAuto Category"
+    },
+    "NP_MT_NONE_AADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/NONE/AADC/NonAuto Price"
+    },
+    "NP_MT_NONE_AADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/NONE/AADC/NonAuto Postage"
+    },
+    "NP_MT_NONE_AADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/NONE/AADC/NonAuto Count"
+    },
+    "NP_MT_NONE_MxdAADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/NONE/MxdAADC/NonAuto PS 3602 Code"
+    },
+    "NP_MT_NONE_MxdAADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/NONE/MxdAADC/NonAuto Entry Discount"
+    },
+    "NP_MT_NONE_MxdAADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/NONE/MxdAADC/NonAuto Category"
+    },
+    "NP_MT_NONE_MxdAADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/NONE/MxdAADC/NonAuto Price"
+    },
+    "NP_MT_NONE_MxdAADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/NONE/MxdAADC/NonAuto Postage"
+    },
+    "NP_MT_NONE_MxdAADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/NONE/MxdAADC/NonAuto Count"
+    },
+    "NP_MT_DNDC_AADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DNDC/AADC/NonAuto PS 3602 Code"
+    },
+    "NP_MT_DNDC_AADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DNDC/AADC/NonAuto Entry Discount"
+    },
+    "NP_MT_DNDC_AADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DNDC/AADC/NonAuto Category"
+    },
+    "NP_MT_DNDC_AADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DNDC/AADC/NonAuto Price"
+    },
+    "NP_MT_DNDC_AADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DNDC/AADC/NonAuto Postage"
+    },
+    "NP_MT_DNDC_AADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DNDC/AADC/NonAuto Count"
+    },
+    "NP_MT_DNDC_MxdAADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DNDC/MxdAADC/NonAuto PS 3602 Code"
+    },
+    "NP_MT_DNDC_MxdAADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DNDC/MxdAADC/NonAuto Entry Discount"
+    },
+    "NP_MT_DNDC_MxdAADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DNDC/MxdAADC/NonAuto Category"
+    },
+    "NP_MT_DNDC_MxdAADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DNDC/MxdAADC/NonAuto Price"
+    },
+    "NP_MT_DNDC_MxdAADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DNDC/MxdAADC/NonAuto Postage"
+    },
+    "NP_MT_DNDC_MxdAADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DNDC/MxdAADC/NonAuto Count"
+    },
+    "NP_MT_DSCF_AADC_NonAuto_PS3602": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DSCF/AADC/NonAuto PS 3602 Code"
+    },
+    "NP_MT_DSCF_AADC_NonAuto_Entry": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DSCF/AADC/NonAuto Entry Discount"
+    },
+    "NP_MT_DSCF_AADC_NonAuto_Category": {
+      "type": "string",
+      "comments": "Non-Profit/Meter/DSCF/AADC/NonAuto Category"
+    },
+    "NP_MT_DSCF_AADC_NonAuto_Price": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DSCF/AADC/NonAuto Price"
+    },
+    "NP_MT_DSCF_AADC_NonAuto_Postage": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DSCF/AADC/NonAuto Postage"
+    },
+    "NP_MT_DSCF_AADC_NonAuto_Count": {
+      "type": "number",
+      "comments": "Non-Profit/Meter/DSCF/AADC/NonAuto Count"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
