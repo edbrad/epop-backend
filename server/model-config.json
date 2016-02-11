@@ -57,7 +57,7 @@
     "$resolved": true
   },
   "eDocStatement": {
-    "dataSource": "db",
+    "dataSource": "epop-backend",
     "public": true,
     "$promise": {},
     "$resolved": true
